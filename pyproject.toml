@@ -1,0 +1,30 @@
+[project]
+name = "multi-digit-sequence-recognition"
+version = "0.1.0"
+description = "Attention-based CNN Encoder - LSTM Decoder for Handwritten Multi-Digit Sequence Recognition"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "pillow>=10.0.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+    "scikit-learn>=1.3.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "kagglehub>=0.3.0",
+    "kaggle>=1.6.0",
+    "gdown>=5.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v"

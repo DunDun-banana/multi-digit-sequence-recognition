@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+kaggle.json
+*.pem
+*.key
+
+# Dataset
+data/raw/*
+data/processed/*
+data/splits/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/splits/.gitkeep
+
+# Model checkpoints and outputs
+checkpoints/*
+!checkpoints/.gitkeep
+outputs/*
+report/figures/*
+!outputs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# Documents and large files
+*.zip
+*.tar
+*.tar.gz
